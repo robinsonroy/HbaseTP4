@@ -56,8 +56,12 @@ public class Hbase {
                 birthdate = sc.nextLine();
                 System.out.print("Email : ");
                 email = sc.nextLine();
-                System.out.print("Best friends : ");
-                BF = sc.nextLine();
+
+                do {
+                    System.out.print("Best friends : ");
+                    BF = sc.nextLine();
+                }while (BF.equals(""));
+
                 System.out.print("Now I will ask you all the " + firstname + "'s friends one by one. To finish just write stop.\n");
                 do {
                     System.out.print("friend : ");
